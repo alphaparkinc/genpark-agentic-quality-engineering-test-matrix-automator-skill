@@ -1,0 +1,35 @@
+{
+  "name": "genpark-agentic-quality-engineering-test-matrix-automator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Agentic Quality Engineering (QE), self-healing test automation & cross-platform coverage matrix.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "quality-engineering",
+    "test-matrix",
+    "self-healing-tests",
+    "qa-automation",
+    "ph-august18"
+  ],
+  "inputs": {
+    "test_suite_spec": {
+      "type": "object"
+    },
+    "target_browsers": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "test_pass_rate_pct": {
+      "type": "number"
+    },
+    "healed_locators_count": {
+      "type": "integer"
+    },
+    "matrix_coverage_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
